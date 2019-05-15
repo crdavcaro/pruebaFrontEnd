@@ -1,0 +1,31 @@
+<h1 class="animated fadeIn">{{person.name | uppercase}}</h1>
+<hr>
+<div class="row animated fadeIn">
+    <div class="col-md-2">
+        <i class="fas fa-7x fa-address-card" aria-hidden="true"></i>
+    </div>
+    <div class="col-md-8">
+        <p>
+            <i class="fa fa-user" aria-hidden="true"></i> {{person.username}}
+        </p>
+        <p>
+            <i class="fa fa-envelope" aria-hidden="true"></i> {{person.email}}
+        </p>
+        <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i> {{person.address.street}} - {{person.address.suite}}, {{person.address.city}}
+        </p>
+        <p>
+            <i class="fa fa-phone" aria-hidden="true"></i> {{person.phone}}
+        </p>
+        <p>
+            <i class="fa fa-link" aria-hidden="true"></i> {{person.website}}
+        </p>
+        <p>
+            <i class="fa fa-building" aria-hidden="true"></i> {{person.company.name}}
+        </p>
+    </div>
+    <br><br>
+    <div class="col-md-4">
+        <a [routerLink]="['/home']" class="btn btn-outline-danger btn-block">Back</a>
+    </div>
+</div>
